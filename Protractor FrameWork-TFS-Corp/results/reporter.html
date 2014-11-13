@@ -1,0 +1,38 @@
+<html><head><title>Generated test report</title><style>ul,li{margin-left:0;padding-left:0;width:100%;font-weight:bold;}table{width:95%;text-align:left;border-spacing:0;border-collapse: separate;margin-bottom:5px;}li{font-weight:bold;padding-left:5px;list-style:none;}ul table li{font-weight: normal}th,td{padding: 10px;border: 1px solid #000;}td.desc-col{width:400px;}th.desc-col{width: 390px;}td.status-col{width:75px;}th.status-col{width: 75px;}td.browser-col{width:345px;}th.browser-col{width: 345px;}td.os-col{width:100px;}th.os-col{width: 100px;}td.msg-col{width:135px;}th.msg-col{width: 135px;}table.header{background-color: gray; color: #fff;margin-left:20px;}.traceinfo{position: fixed;top: 0; bottom: 0;left: 0;right:0;background: rgba(0,0,0,0.8);z-index: 99999;opacity:0;-webkit-transition: opacity 400ms ease-in;transition: opacity 400ms ease-in;pointer-events: none;}.traceinfo.visible{opacity:1;pointer-events: auto;}.traceinfo > div{width: 400px;position: relative;margin: 10% auto;padding: 5px 20px 13px 20px;background: #fff;}.traceinfo .close{background: #606061;color: #FFFFFF;line-height: 25px;position: absolute;right: -12px;text-align: center;top: -10px;width: 24px;text-decoration: none;font-weight: bold;}.traceinfo .close:hover{background: #00d9ff;}</style><script type='text/javascript'>function showTrace(e){window.event.srcElement.parentElement.getElementsByClassName('traceinfo')[0].className = 'traceinfo visible';}function closeTraceModal(e){window.event.srcElement.parentElement.parentElement.className = 'traceinfo';}function openModal(imageSource){var myWindow = window.open('','screenshotWindow');myWindow.document.write('<img src="' +imageSource + '" alt="screenshot" />');}</script> </head><body style='font-family:Arial;'><h1>Test Results</h1><table class='header'><tr><th class='desc-col'>Description</th><th class='status-col'>Passed</th><th class='browser-col'>Browser</th><th class='os-col'>OS</th><th class='msg-col'>Message</th><th class='img-col'>Screenshot</th></tr></table><ul><li>FullDay Test<ul><li><table><tr><td class="desc-col">First Test</td><td class="status-col" style="color:#fff;background-color: red">false</td><td class="browser-col">chrome:36.0.1985.143</td><td class="os-col">XP</td><td class="msg-col">Error: No element found using locator: by.cssContainingText("option", "Bangalore")<br/><a onclick="showTrace()" href="#trace-modal0">View Stack Trace Info</a><br/> <div id="#trace-modal0" class="traceinfo"><div><a href="#close" onclick="closeTraceModal()" title="Close" class="close">X</a>Error: No element found using locator: by.cssContainingText("option", "Bangalore")
+    at webElementsPromise.then.then.e.stack (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\lib\protractor.js:674:15)
+    at C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\goog\base.js:1243:15
+    at webdriver.promise.ControlFlow.runInNewFrame_ (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:1539:20)
+    at notify (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:362:12)
+    at notifyAll (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:331:7)
+    at resolve (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:309:7)
+    at fulfill (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:429:5)
+    at C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\goog\base.js:1243:15
+    at webdriver.promise.ControlFlow.runInNewFrame_ (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:1539:20)
+    at notify (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:362:12)
+==== async task ====
+Asynchronous test function: it()
+    at null.<anonymous> (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd\index.js:93:33)
+    at null.<anonymous> (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\minijasminenode\lib\async-callback.js:45:37)
+    at jasmine.Block.execute (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\minijasminenode\lib\jasmine-1.3.1.js:1174:17)
+    at jasmine.Queue.next_ (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\minijasminenode\lib\jasmine-1.3.1.js:2209:31)
+    at null._onTimeout (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\minijasminenode\lib\jasmine-1.3.1.js:2199:18)
+    at Timer.listOnTimeout [as ontimeout] (timers.js:112:15)
+Error
+    at ElementFinder.getWebElement (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\lib\protractor.js:667:23)
+    at Protractor.findElement (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\lib\protractor.js:921:32)
+    at null.<anonymous> (E:\Protractor\fullDay.js:29:10)
+    at C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd\index.js:94:14
+    at webdriver.promise.ControlFlow.runInNewFrame_ (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:1539:20)
+    at webdriver.promise.ControlFlow.runEventLoop_ (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver\promise.js:1404:8)
+    at wrapper [as _onTimeout] (timers.js:261:14)
+    at Timer.listOnTimeout [as ontimeout] (timers.js:112:15)==== async task ====
+Error
+    at null.<anonymous> (E:\Protractor\fullDay.js:18:3)
+    at jasmine.Env.describe_ (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\minijasminenode\lib\jasmine-1.3.1.js:913:21)
+    at jasmine.Env.describe (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\minijasminenode\lib\jasmine-1.3.1.js:898:15)
+    at describe (C:\Users\sabyasachi.mishra\AppData\Roaming\npm\node_modules\protractor\node_modules\minijasminenode\lib\jasmine-1.3.1.js:658:27)
+    at Object.<anonymous> (E:\Protractor\fullDay.js:1:63)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)</div></div></td><td class="img-col"><a href="#" onclick="openModal('001a001d-0088-0096-0035-0062008000b0.png')">View </a></td></tr></table></li></ul></li></ul><div><h2><u>Results summary</u></h2><b>Total tests passed</b>: 0 <br/> <b>Total tests failed</b>: 1 <br/> This report generated on Thu Aug 21 2014 12:21:27 GMT+0530 (India Standard Time) </div></body></html>
