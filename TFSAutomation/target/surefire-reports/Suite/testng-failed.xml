@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="none">
+  <test name="TaxiforsureTest(failed)" parallel="none">
+    <classes>
+      <class name="com.taxiforsure.regressionTest.TaxiforSureBookingsTest">
+        <methods>
+          <include name="onTestFailure"/>
+          <include name="loginTest"/>
+          <include name="pointToPointTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.taxiforsure.regressionTest.TaxiforSureBookingsTest -->
+    </classes>
+  </test> <!-- TaxiforsureTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

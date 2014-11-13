@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="TaxiforsureTest">
+    <classes>
+<!--       <class name="com.taxiforsure.regressionTest.LoginTest"/> -->
+       <class name="com.taxiforsure.regressionTest.TaxiforSureBookingsTest"/>
+<!--        <class name="com.taxiforsure.regressionTest.CancelBookingTest"/> -->
+<!-- 			<class name="com.taxiforsure.regressionTest.TOSPageTest"/> -->
+
+    </classes>
+  </test> <!-- TaxiforsureTest -->
+</suite> <!-- Suite -->
