@@ -39,8 +39,15 @@ public class MyDriver {
 
 	public static FirefoxProfile getFirefoxProfile(){
 		FirefoxProfile profile = new FirefoxProfile();
+				
+				
 		profile.setAcceptUntrustedCertificates(true);
 		profile.setAssumeUntrustedCertificateIssuer(false);
+		/*var firefoxProfile = new FirefoxProfile
+	            {
+	                AcceptUntrustedCertificates = true,
+	                EnableNativeEvents = true
+	            };*/
 		
 		return profile;
 		
