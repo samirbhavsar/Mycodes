@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.taxiforsure.actions.DoOperation;
 import com.taxiforsure.actions.ProjectCommmonMethods;
@@ -166,9 +167,9 @@ public class SelectLocation {
 	
 	public void doSelectLocationsPointToPoint(String pickupArea,
 			String drpArea, String time)
-			throws InterruptedException {
+			{
 		//DoOperation.click(driver, pointToPointTag);
-		
+		try{
 
 		DoOperation.type(driver, pickUpArea, pickupArea.split(" ")[0]);
 		Thread.sleep(3000);
@@ -193,6 +194,10 @@ public class SelectLocation {
 		DoOperation.click(driver, pickUptime);
 		DoOperation.click(driver,selectTime,time);
 		DoOperation.click(driver, findTaxiBtn);
+		}catch(Exception e){
+		
+			Assert.fail("");
+		}
 
 	}
 	
