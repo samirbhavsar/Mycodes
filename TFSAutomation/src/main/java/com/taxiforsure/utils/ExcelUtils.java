@@ -13,6 +13,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.ss.util.CellReference;
 import org.testng.SkipException;
 
 public class ExcelUtils {
@@ -144,7 +145,8 @@ public class ExcelUtils {
 			case Cell.CELL_TYPE_NUMERIC:
 				
 				//CellData=CellReference.convertNumToColString((int) cell.getNumericCellValue());
-				CellData =new BigDecimal(cell.getNumericCellValue()).toPlainString();  
+				//CellData =new BigDecimal(cell.getNumericCellValue()).toPlainString();  
+				CellData=String.valueOf(cell.getNumericCellValue());
 				//CellData= Double.toString(cell.getNumericCellValue());
 				break;
 			case Cell.CELL_TYPE_BOOLEAN:

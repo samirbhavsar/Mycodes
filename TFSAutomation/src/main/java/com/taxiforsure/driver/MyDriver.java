@@ -30,7 +30,8 @@ public class MyDriver {
 	 * This method will get the url if we pass it as an argument in cmd mvn test
 	 * appurl="ururl"
 	 */
-	public static Logger ESS_LOGS=Logger.getLogger("devpinoyLogger");;
+	public static Logger ESS_LOGS=Logger.getLogger("devpinoyLogger");
+	public static String downoad_Dir=System.getProperty("user.dir")+"/downloads/";
 
 	public String geturl() {
 		System.out.println("url " + System.getProperty("appurl"));
@@ -40,15 +41,28 @@ public class MyDriver {
 	public static FirefoxProfile getFirefoxProfile(){
 		FirefoxProfile profile = new FirefoxProfile();
 				
-				
+		//SSL handling	profile	
 		profile.setAcceptUntrustedCertificates(true);
 		profile.setAssumeUntrustedCertificateIssuer(false);
-		/*var firefoxProfile = new FirefoxProfile
-	            {
-	                AcceptUntrustedCertificates = true,
-	                EnableNativeEvents = true
-	            };*/
 		
+		//File Download propfile
+		profile.setPreference("browser.download.folderList", 2); 
+		profile.setPreference("browser.download.dir",downoad_Dir); 
+//		profile.setPreference("browser.download.manager.alertOnEXEOpen", false); 
+		profile.setPreference("browser.helperApps.neverAsk.saveToDisk", "application/msword,application/csv,text/csv,image/png ,image/jpeg, application/pdf, text/html,text/plain,application/octet-stream"); 
+		profile.setPreference("browser.download.manager.showWhenStarting", false); 
+		/*profile.setPreference("browser.download.manager.focusWhenStarting", false); 
+		profile.setPreference("browser.download.useDownloadDir", true); 
+		profile.setPreference("browser.helperApps.alwaysAsk.force", false); 
+		profile.setPreference("browser.download.manager.alertOnEXEOpen", false); 
+		profile.setPreference("browser.download.manager.closeWhenDone", false); 
+		profile.setPreference("browser.download.manager.showAlertOnComplete", false); 
+		profile.setPreference("browser.download.manager.useWindow", false); 
+		profile.setPreference("browser.download.manager.showWhenStarting",false); 
+		profile.setPreference("services.sync.prefs.sync.browser.download.manager.showWhenStarting", false); 
+
+		profile.setPreference("pdfjs.disabled", true); 
+*/		
 		return profile;
 		
 	}

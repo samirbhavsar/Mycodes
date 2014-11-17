@@ -6,6 +6,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
@@ -50,10 +53,12 @@ public static WebDriver currentDriver;
 
 		dc.setBrowserName("firefox");
 		dc.setPlatform(Platform.ANY);
+		dc.setCapability(FirefoxDriver.PROFILE, MyDriver.getFirefoxProfile());
 		}else if(browser.equalsIgnoreCase("chrome"))
 		{
 			dc.setBrowserName("chrome");
 			dc.setPlatform(Platform.ANY);
+			dc.setCapability(ChromeOptions.CAPABILITY, MyDriver.getChromeProfile());
 		}
 		currentDriver = driver.get();
 		
