@@ -145,8 +145,8 @@ public class ExcelUtils {
 			case Cell.CELL_TYPE_NUMERIC:
 				
 				//CellData=CellReference.convertNumToColString((int) cell.getNumericCellValue());
-				//CellData =new BigDecimal(cell.getNumericCellValue()).toPlainString();  
-				CellData=String.valueOf(cell.getNumericCellValue());
+				CellData =new BigDecimal(cell.getNumericCellValue()).toPlainString();  
+				//CellData=String.valueOf(cell.getNumericCellValue());
 				//CellData= Double.toString(cell.getNumericCellValue());
 				break;
 			case Cell.CELL_TYPE_BOOLEAN:
@@ -165,6 +165,9 @@ public class ExcelUtils {
 		return CellData;
 	}
 	
+	public static void main(String[] args) throws InvalidFormatException, IOException {
+		System.out.println(ExcelUtils.getExcelData("p2p", 1, 5));
+	}
 public  static String getExcelData(String sheetName,int RowNum, int ColNum) throws InvalidFormatException, IOException {
 
 		
@@ -179,6 +182,8 @@ public  static String getExcelData(String sheetName,int RowNum, int ColNum) thro
 		switch (type) {
 		case Cell.CELL_TYPE_NUMERIC: // 0
 			result = new BigDecimal(cell.getNumericCellValue());  
+			//result=CellReference.convertNumToColString((int) cell.getNumericCellValue());
+			//result=cell.getNumericCellValue();
 			break;
 		case Cell.CELL_TYPE_STRING: // 1
 			result = cell.getStringCellValue();
