@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -69,14 +70,25 @@ public class MyDriver {
 	}
 	
 	public static DesiredCapabilities getChromeProfile(){
-		ChromeOptions options = new ChromeOptions();
+		/*ChromeOptions options = new ChromeOptions();
 		options.addArguments("--test-type");
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		capability.setCapability(ChromeOptions.CAPABILITY, "--test-type");
-		
-		
-		
+		*/
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
+
+		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+		chromePrefs.put("profile.default_content_settings.popups", 0);
+		chromePrefs.put("download.default_directory", downoad_Dir);
+		ChromeOptions options = new ChromeOptions();
+		HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
+		options.setExperimentalOption("prefs", chromePrefs);
+		options.addArguments("--test-type");
+		//DesiredCapabilities cap = DesiredCapabilities.chrome();
+		capability.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
+		capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		capability.setCapability(ChromeOptions.CAPABILITY, options);
 		return capability;
 		
 	}
