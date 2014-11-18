@@ -1,0 +1,21 @@
+<project name="CopyReport" default="all" basedir=".">
+  <!-- Define an environment variable pointing to JMETER folder or change this -->
+  <property environment="env"/>
+  <property name="project.report" value="${basedir}/test-output/html" />
+  <property name="xslt.report" value="${basedir}/XSLT_Reports/output" />
+  
+  <tstamp>
+		<format property="current.time" pattern="dd-MM-yyyy-HHmmss" />
+  </tstamp>
+  
+  <target name="clean">
+
+	<copy todir="${basedir}/Results/${current.time}/ReportNg"> <fileset dir="${project.report}"></fileset> </copy>
+	<copy todir="${basedir}/Results/${current.time}/XsltReports"> <fileset dir="${xslt.report}"></fileset> </copy>
+	
+  </target>
+
+  <!-- Fourth target to run all the targets-->
+  <target name="all" depends="clean"/>
+
+</project>

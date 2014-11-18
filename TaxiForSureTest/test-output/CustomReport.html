@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BANC Selenium RC Execution Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<b>Execution Parameters</b>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>baseUrl</th><th>hubUrl</th><th>osType</th><th>browser</th><th>browserVersion</th><th>resolution</th><th>variable</th></tr>
+<td class="numi">baseUrl</td><td class="numi">hubUrl</td><td class="numi">osType</td><td class="numi">browser</td><td class="numi">browserVersion</td><td class="numi">resolution</td><td class="numi">variable</td></table>
+<p></p>
+<b align="center">Execution Summary</b>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br>Passed</th><th>Scenarios<br>Passed</th><th># skipped</th><th># failed</th><th>Total<br>Time</th><th>Included<br>Groups</th><th>Excluded<br>Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">TaxiForSureBookingsTest</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">0h:6m:4s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<p></p>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<b align="center">Result Summary Table</b>
+<tr><th>Class</th><th>Method</th><th># of<br>Scenarios</th><th>Start</th><th>Time<br>elapsed</th><th>Custom</th></tr>
+<tr id="t1"><th colspan="6">TaxiForSureBookingsTest — failed</th></tr>
+<tr class="failedodd"><td rowspan="6">com.taxiforsure.testCases.TaxiForSureTest</td><td><a href="#m1"><b>HalfDayOrFullDayTest</b>  </a></td><td class="numi">2</td><td> Sep 1 at 06:34 PM</td><td class="numi">0h:1m:26s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="failedodd"><td><a href="#m2"><b>HalfDayOrFullDayTest</b>  </a></td><td class="numi">2</td><td> Sep 1 at 06:34 PM</td><td class="numi">0h:1m:26s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="failedodd"><td><a href="#m3"><b>commingFromAirportTest</b>  </a></td><td class="numi">2</td><td> Sep 1 at 06:33 PM</td><td class="numi">0h:1m:24s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="failedodd"><td><a href="#m4"><b>commingFromAirportTest</b>  </a></td><td class="numi">2</td><td> Sep 1 at 06:33 PM</td><td class="numi">0h:1m:24s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="failedodd"><td><a href="#m5"><b>goToAirportTest</b>  </a></td><td class="numi">2</td><td> Sep 1 at 06:31 PM</td><td class="numi">0h:1m:23s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="failedodd"><td><a href="#m6"><b>goToAirportTest</b>  </a></td><td class="numi">2</td><td> Sep 1 at 06:31 PM</td><td class="numi">0h:1m:23s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+<tr><th colspan="6">TaxiForSureBookingsTest — passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.taxiforsure.testCases.TaxiForSureTest</td><td><a href="#m7"><b>pointToPointBookingTest</b>  </a></td><td class="numi">2</td><td> Sep 1 at 06:30 PM</td><td class="numi">0h:1m:11s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="passedodd"><td><a href="#m8"><b>pointToPointBookingTest</b>  </a></td><td class="numi">2</td><td> Sep 1 at 06:30 PM</td><td class="numi">0h:1m:11s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+</table>
+<br/><b align="center">Method Summaries</b><br/>
+<h1>Suite</h1>
+<h3>TaxiForSureBookingsTest</h3>
+<h2 id="m1">com.taxiforsure.testCases.TaxiForSureTest : HalfDayOrFullDayTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th><th>Param.4</th><th>Param.5</th><th>Param.6</th><th>Param.7</th><th>Param.8</th><th>Param.9</th><th>Param.10</th></tr>
+<tr class="param stripe"><td>&quot;Surat&quot;</td>
+<td>&quot;FullDay&quot;</td>
+<td>&quot;New Rander Road,Surdas Nagar,Rander&quot;</td>
+<td>&quot;20/09/2014&quot;</td>
+<td>&quot;10:15 p.m.&quot;</td>
+<td>&quot;Sedan&quot;</td>
+<td>&quot;New Rander Road,Surdas Nagar,Rander&quot;</td>
+<td>&quot;New Rander Road,Surdas Nagar,Rander&quot;</td>
+<td>&quot;8892566529&quot;</td>
+<td>&quot;sabyasachi2189@gmail.com&quot;</td>
+</tr>
+<tr><td colspan="10">
+<div class="stacktrace">java.lang.AssertionError: expected and actual result do not match
+	at com.taxiforsure.testCases.TaxiForSureTest.HalfDayOrFullDayTest(TaxiForSureTest.java:375)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.taxiforsure.testCases.TaxiForSureTest : goToAirportTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th><th>Param.4</th><th>Param.5</th><th>Param.6</th><th>Param.7</th><th>Param.8</th><th>Param.9</th><th>Param.10</th></tr>
+<tr class="param stripe"><td>&quot;Surat&quot;</td>
+<td>&quot;Surat Airport&quot;</td>
+<td>&quot;28/09/2014&quot;</td>
+<td>&quot;10:15 p.m.&quot;</td>
+<td>&quot;New Rander Road,Surdas Nagar,Rander&quot;</td>
+<td>&quot;Sedan&quot;</td>
+<td>&quot;New Rander Road,Surdas Nagar,Rander&quot;</td>
+<td>&quot;New Rander Road,Surdas Nagar,Rander&quot;</td>
+<td>&quot;8892566529&quot;</td>
+<td>&quot;sabyasachi2189@gmail.com&quot;</td>
+</tr>
+<tr><td colspan="10">
+<div class="stacktrace">java.lang.AssertionError: expected and actual result do not match
+	at com.taxiforsure.testCases.TaxiForSureTest.goToAirportTest(TaxiForSureTest.java:254)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.taxiforsure.testCases.TaxiForSureTest : goToAirportTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th><th>Param.4</th><th>Param.5</th><th>Param.6</th><th>Param.7</th><th>Param.8</th><th>Param.9</th><th>Param.10</th></tr>
+<tr class="param stripe"><td>&quot;Bangalore&quot;</td>
+<td>&quot;Bangalore Airport&quot;</td>
+<td>&quot;2/09/2014&quot;</td>
+<td>&quot;6:15 a.m.&quot;</td>
+<td>&quot;Majestic&quot;</td>
+<td>&quot;Sedan&quot;</td>
+<td>&quot;xyz&quot;</td>
+<td>&quot;abc&quot;</td>
+<td>&quot;8892566529&quot;</td>
+<td>&quot;sabyasachi2189@gmail.com&quot;</td>
+</tr>
+<tr><td colspan="10">
+<div class="stacktrace">java.lang.AssertionError: expected and actual result do not match
+	at com.taxiforsure.testCases.TaxiForSureTest.goToAirportTest(TaxiForSureTest.java:254)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.taxiforsure.testCases.TaxiForSureTest : commingFromAirportTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th><th>Param.4</th><th>Param.5</th><th>Param.6</th><th>Param.7</th><th>Param.8</th></tr>
+<tr class="param stripe"><td>&quot;Bangalore&quot;</td>
+<td>&quot;Bangalore Airport&quot;</td>
+<td>&quot;3/09/2014&quot;</td>
+<td>&quot;3:30 p.m.&quot;</td>
+<td>&quot;Majestic&quot;</td>
+<td>&quot;Sedan&quot;</td>
+<td>&quot;8892566529&quot;</td>
+<td>&quot;sabyasachi2189@gmail.com&quot;</td>
+</tr>
+<tr><td colspan="8">
+<div class="stacktrace">java.lang.AssertionError: expected and actual result do not match
+	at com.taxiforsure.testCases.TaxiForSureTest.commingFromAirportTest(TaxiForSureTest.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.taxiforsure.testCases.TaxiForSureTest : HalfDayOrFullDayTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th><th>Param.4</th><th>Param.5</th><th>Param.6</th><th>Param.7</th><th>Param.8</th><th>Param.9</th><th>Param.10</th></tr>
+<tr class="param stripe"><td>&quot;Bangalore&quot;</td>
+<td>&quot;HalfDay&quot;</td>
+<td>&quot;Marathahalli&quot;</td>
+<td>&quot;20/09/2014&quot;</td>
+<td>&quot;3:30 p.m.&quot;</td>
+<td>&quot;Sedan&quot;</td>
+<td>&quot;abc&quot;</td>
+<td>&quot;xyz&quot;</td>
+<td>&quot;8892566529&quot;</td>
+<td>&quot;sabyasachi2189@gmail.com&quot;</td>
+</tr>
+<tr><td colspan="10">
+<div class="stacktrace">java.lang.AssertionError: expected and actual result do not match
+	at com.taxiforsure.testCases.TaxiForSureTest.HalfDayOrFullDayTest(TaxiForSureTest.java:375)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.taxiforsure.testCases.TaxiForSureTest : commingFromAirportTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th><th>Param.4</th><th>Param.5</th><th>Param.6</th><th>Param.7</th><th>Param.8</th></tr>
+<tr class="param stripe"><td>&quot;Surat&quot;</td>
+<td>&quot;Surat Airport&quot;</td>
+<td>&quot;3/09/2014&quot;</td>
+<td>&quot;10:15 p.m.&quot;</td>
+<td>&quot;New Rander Road,Surdas Nagar,Rander&quot;</td>
+<td>&quot;Sedan&quot;</td>
+<td>&quot;8892566529&quot;</td>
+<td>&quot;sabyasachi2189@gmail.com&quot;</td>
+</tr>
+<tr><td colspan="8">
+<div class="stacktrace">java.lang.AssertionError: expected and actual result do not match
+	at com.taxiforsure.testCases.TaxiForSureTest.commingFromAirportTest(TaxiForSureTest.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 11 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.taxiforsure.testCases.TaxiForSureTest : pointToPointBookingTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th><th>Param.4</th><th>Param.5</th><th>Param.6</th><th>Param.7</th><th>Param.8</th><th>Param.9</th><th>Param.10</th></tr>
+<tr class="param stripe"><td>&quot;Surat&quot;</td>
+<td>&quot;New Rander Road,Surdas Nagar,Rander&quot;</td>
+<td>&quot;New City Light Road,Athwalines,Althan&quot;</td>
+<td>&quot;27/09/2014&quot;</td>
+<td>&quot;10:15 p.m.&quot;</td>
+<td>&quot;Sedan&quot;</td>
+<td>&quot;New City Light Road,Athwalines,Althan&quot;</td>
+<td>&quot;Technical Teachers Trg In&quot;</td>
+<td>&quot;8892566529&quot;</td>
+<td>&quot;sabyasachi2189@gmail.com&quot;</td>
+</tr>
+<tr><td><i>Test did not have report output.</i></td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.taxiforsure.testCases.TaxiForSureTest : pointToPointBookingTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th><th>Param.2</th><th>Param.3</th><th>Param.4</th><th>Param.5</th><th>Param.6</th><th>Param.7</th><th>Param.8</th><th>Param.9</th><th>Param.10</th></tr>
+<tr class="param stripe"><td>&quot;Bangalore&quot;</td>
+<td>&quot;Marathahalli&quot;</td>
+<td>&quot;Majestic&quot;</td>
+<td>&quot;23/09/2014&quot;</td>
+<td>&quot;6:15 a.m.&quot;</td>
+<td>&quot;Sedan&quot;</td>
+<td>&quot;xyz&quot;</td>
+<td>&quot;abc&quot;</td>
+<td>&quot;8892566529&quot;</td>
+<td>&quot;sabyasachi2189@gmail.com&quot;</td>
+</tr>
+<tr><td><i>Test did not have report output.</i></td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center><h4>Customized TestNG Report</h4></center>
+</body></html>
