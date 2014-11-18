@@ -57,6 +57,23 @@ public class DoOperation
 		T page = PageFactory.initElements(driver, clazz);
 		return page;
 	}
+	
+	public static void waitForAjaxToFinish(WebDriver driver) {
+        int timeout = 0;
+        while(timeout<400) {
+            boolean ajaxWorking = (boolean) ((JavascriptExecutor) driver)
+                    .executeScript("return jQuery.active == 0");
+            if(ajaxWorking) {
+                break;
+            }
+            try{
+                timeout++;
+                Thread.sleep(500);
+            } catch(Exception e) {
+ 
+            }
+        }
+    }
 
 	public static void waitForPageLoad(WebDriver driver) {
 
