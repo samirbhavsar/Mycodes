@@ -5,6 +5,9 @@
     <classes>
 <!--       <class name="com.taxiforsure.regressionTest.LoginTest"/> -->
        <class name="com.taxiforsure.regressionTest.TaxiforSureBookingsTest"/>
+       <!-- <methods>
+           <include name="goToAirportTest" />
+       </methods> -->
 <!--        <class name="com.taxiforsure.regressionTest.CancelBookingTest"/> -->
 <!-- 			<class name="com.taxiforsure.regressionTest.TOSPageTest"/> -->
 

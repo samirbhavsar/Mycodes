@@ -1,0 +1,296 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 22, Errors: 0, Skipped: 0, Time elapsed: 831.745 sec <<< FAILURE!
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 20.803 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 21.439 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 26.594 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 32.16 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@class='submenu']/span[text()='Answer Call']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:14'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+Command duration or timeout: 20.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ip-10-146-7-231', ip: '10.146.7.231', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-24-generic', java.version: '1.7.0_65'
+Session ID: 52a4d6d989614be4b5438c6335f63545
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, hasMetadata=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=52a4d6d989614be4b5438c6335f63545, version=32.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy4.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:362)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:160)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:504)
+	at org.taxiforsure.rtfscommonelements.CommonElements.clickAnswerCallLink(CommonElements.java:26)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:92)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@class='submenu']/span[text()='Answer Call']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:14'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ip-10-146-7-231', ip: '10.146.7.231', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-24-generic', java.version: '1.7.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6142360968841556817webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous6142360968841556817webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 19.198 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 26.765 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.taxiforsure.actions.DoOperation.type(DoOperation.java:36)
+	at org.taxiforsure.answercall.AnswerCallScreen.setPhoneNumber(AnswerCallScreen.java:189)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:95)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 9.165 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 19.882 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 19.672 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 27.281 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.taxiforsure.actions.DoOperation.type(DoOperation.java:36)
+	at org.taxiforsure.answercall.AnswerCallScreen.setPhoneNumber(AnswerCallScreen.java:189)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:95)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 26.171 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 26.297 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 20.812 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 21.076 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 25.223 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 30.917 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@class='submenu']/span[text()='Answer Call']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:14'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+Command duration or timeout: 21.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ip-10-146-7-231', ip: '10.146.7.231', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-24-generic', java.version: '1.7.0_65'
+Session ID: 3616a4831d71498f87e9802d4b204a2e
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, hasMetadata=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=3616a4831d71498f87e9802d4b204a2e, version=32.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy4.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:362)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:160)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:504)
+	at org.taxiforsure.rtfscommonelements.CommonElements.clickAnswerCallLink(CommonElements.java:26)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:92)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@class='submenu']/span[text()='Answer Call']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:14'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ip-10-146-7-231', ip: '10.146.7.231', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-24-generic', java.version: '1.7.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous4038410279284937151webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous4038410279284937151webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 15.765 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 20.757 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 20.762 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 28.213 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@class='submenu']/span[text()='Answer Call']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:14'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+Command duration or timeout: 20.28 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ip-10-146-7-231', ip: '10.146.7.231', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-24-generic', java.version: '1.7.0_65'
+Session ID: 1e9f40759b8b411bbe4cc4bfc4418bb7
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, hasMetadata=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=1e9f40759b8b411bbe4cc4bfc4418bb7, version=32.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy4.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:362)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:160)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:504)
+	at org.taxiforsure.rtfscommonelements.CommonElements.clickAnswerCallLink(CommonElements.java:26)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:92)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@class='submenu']/span[text()='Answer Call']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:14'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ip-10-146-7-231', ip: '10.146.7.231', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-24-generic', java.version: '1.7.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous3026341837752938746webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous3026341837752938746webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 14.573 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+
+testVerifyHatchBackNight(org.taxiforsure.rtfs.TestVerifyNightFutureBooking)  Time elapsed: 19.435 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.taxiforsure.utils.DataBaseUtils.closeConnection(DataBaseUtils.java:90)
+	at org.taxiforsure.utils.DataBaseUtils.executeQuery(DataBaseUtils.java:43)
+	at org.taxiforsure.answercall.AnswerCallScreen.getAllLocalities(AnswerCallScreen.java:541)
+	at org.taxiforsure.answercall.AnswerCallScreen.getpickUpLocality(AnswerCallScreen.java:656)
+	at org.taxiforsure.rtfs.TestVerifyNightFutureBooking.testVerifyHatchBackNight(TestVerifyNightFutureBooking.java:98)
+

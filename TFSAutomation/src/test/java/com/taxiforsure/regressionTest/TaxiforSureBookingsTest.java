@@ -40,7 +40,7 @@ public class TaxiforSureBookingsTest {
 
 
 
-	@Test(priority = 1)
+	@Test(priority = 1,enabled=false)
 	public void loginTest() throws InterruptedException {
 
 		new Login(driver).doLogin();

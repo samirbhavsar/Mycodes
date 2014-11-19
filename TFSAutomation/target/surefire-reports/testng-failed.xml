@@ -6,8 +6,8 @@
       <class name="com.taxiforsure.regressionTest.TaxiforSureBookingsTest">
         <methods>
           <include name="onTestFailure"/>
-          <include name="loginTest"/>
-          <include name="pointToPointTest"/>
+          <include name="tearDown"/>
+          <include name="pointToPointTest" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.taxiforsure.regressionTest.TaxiforSureBookingsTest -->

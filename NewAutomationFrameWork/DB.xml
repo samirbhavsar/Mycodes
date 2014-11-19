@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RTFS test suite" parallel="methods" thread-count="2">
+  <test verbose="2" name="RTFS test automation" preserve-order="true">
+    <classes>
+     <!--  <class name="org.taxiforsure.rtfs.TestVerifyHatchBackDay"/>  -->
+      <!--  <class name="org.taxiforsure.rtfs.TestVerifyHatchBackNight"/>  -->
+      <class name="org.taxiforsure.rtfs.TestVerifyJSon"/>
+    </classes>
+  </test> <!-- RTFS test automation --> 
+  
+  
+</suite> <!-- RTFS test suite -->

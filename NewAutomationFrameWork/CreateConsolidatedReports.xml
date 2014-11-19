@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE project [
+]>
+
+<project name="Learning TestNG"  basedir=".">  
+
+<!-- ========== Initialize Properties =================================== -->
+    <property environment="env"/>
+    
+    <property name="ws.home" value="${basedir}"/>
+	<property name="ws.jars" value="${basedir}/lib"/>
+    <property name="test.dest" value="${ws.home}/build"/>
+    <property name="test.src" value="${ws.home}/src"/>
+	<property name="ng.result" value="target/surefire-reports"/>
+	<property environment="env"/>
+	<property name="project.report" value="${basedir}/target/surefire-reports/html" />
+	<property name="xslt.report" value="${basedir}/XSLT_Reports/output" />
+
+
+	<!-- ****************** Creating XSLT Reports ****************** -->
+	<path id="test.c">
+	        <fileset dir="${ws.jars}" includes="*.jar"/>
+	</path>
+	
+	  <target name="makexsltreports">
+	      	<delete dir="${ws.home}/XSLT_Reports"/>
+	        <mkdir dir="${ws.home}/XSLT_Reports/output"/>
+
+	        <xslt in="${ng.result}/testng-results.xml" style="testng-results.xsl"
+	              out="${ws.home}/XSLT_Reports/output/index.html" classpathref="test.c" processor="SaxonLiaison">
+	            <param name="testNgXslt.outputDir" expression="${ws.home}/XSLT_Reports/output/"/>
+	            <param name="testNgXslt.reportTitle" expression="Sears Automation Results"/>
+	            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
+	            
+	        </xslt>
+	    </target>
+	
+	 <tstamp>
+			<format property="current.time" pattern="yyyyMMdd-HHmmss" />
+	  </tstamp>
+	  
+	<!-- ****************** Creating consolidated reports ****************** -->
+	  <target name="create_consolidated_reports" depends="makexsltreports">
+
+		<copy todir="${basedir}/Results/${current.time}/ReportNg"> <fileset dir="${project.report}"></fileset> </copy>
+		<copy todir="${basedir}/Results/${current.time}/XsltReports"> <fileset dir="${xslt.report}"></fileset> </copy>
+		
+	  </target>
+
+	 
+
+    
+ 
+</project>

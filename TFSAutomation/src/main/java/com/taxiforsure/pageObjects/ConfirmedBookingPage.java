@@ -57,7 +57,7 @@ public class ConfirmedBookingPage {
 		DoOperation.type(driver, smsMobile, mobileNo);
 		DoOperation.type(driver, billToEmail, billTo);
 
-		DoOperation.click(driver, submitBookingBtn);
+//		DoOperation.click(driver, submitBookingBtn);
 		
 
 	}
@@ -71,7 +71,7 @@ public class ConfirmedBookingPage {
 		DoOperation.type(driver, billToEmail, billTo);
 
 		DoOperation.click(driver, submitBookingBtn);
-
+//
 	}
 
 	public void doTypeAddressToAirport(
@@ -82,7 +82,7 @@ public class ConfirmedBookingPage {
 		DoOperation.type(driver, smsMobile, mobileNo);
 		DoOperation.type(driver, billToEmail, billTo);
 
-		DoOperation.click(driver, submitBookingBtn);
+	//	DoOperation.click(driver, submitBookingBtn);
 
 	}
 
@@ -93,7 +93,7 @@ public class ConfirmedBookingPage {
 		DoOperation.type(driver, smsMobile, mobileNo);
 		DoOperation.type(driver, billToEmail, billTo);
 
-		DoOperation.click(driver, submitBookingBtn);
+		//DoOperation.click(driver, submitBookingBtn);
 
 	}
 	
