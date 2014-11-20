@@ -41,7 +41,7 @@ public class LoginTest {
 			
 			e.printStackTrace();
 		}
-		new Login(driver).doLogout();
+		
 	}
 	
 	
@@ -51,6 +51,12 @@ public class LoginTest {
 		
 		if(!result.isSuccess()){
 			new MyDriver().takeScreenShot(result, driver);
+		}
+		try {
+			new Login(driver).doLogout();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		//new Login(driver).doLogout();
 		

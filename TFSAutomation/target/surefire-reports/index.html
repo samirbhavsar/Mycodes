@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.taxiforsure.regressionTest.TaxiforSureBookingsTest" hash-for-method="pointToPointTest(Bangalore, Marathahalli, Majestic, 6:15 a.m., Sedan, 9999999999, sabyasachi2189@gmail.com)">pointToPointTest(Bangalore, Marathahalli, Majestic, 6:15 a.m., Sedan, 9999999999, sabyasachi2189@gmail.com)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.taxiforsure.regressionTest.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -119,35 +119,56 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.taxiforsure.regressionTest.TaxiforSureBookingsTest</span>
+              <span class="class-name">com.taxiforsure.regressionTest.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="pointToPointTest(Bangalore, Marathahalli, Majestic, 6:15 a.m., Sedan, 9999999999, sabyasachi2189@gmail.com)">
-                  </a> <!-- pointToPointTest(Bangalore, Marathahalli, Majestic, 6:15 a.m., Sedan, 9999999999, sabyasachi2189@gmail.com) -->
-                  <span class="method-name">pointToPointTest</span>
-                  <span class="parameters">(Bangalore, Marathahalli, Majestic, 6:15 a.m., Sedan, 9999999999, sabyasachi2189@gmail.com)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (373, 112). Other element would receive the click: &lt;div class=&quot;CityModalWap&quot; id=&quot;cmw&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=38.0.2125.111)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 78 milliseconds
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;SABYA-TI8158&apos;, ip: &apos;10.129.177.53&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: e135825625a56036442161a1e57ac808
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SABYAS~1.MIS\AppData\Local\Temp\scoped_dir3228_30701}, rotatable=false, locationContextEnabled=true, version=38.0.2125.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+System info: host: &apos;SABYA-TI8158&apos;, ip: &apos;10.129.177.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.taxiforsure.actions.DoOperation.click(DoOperation.java:137)
-	at com.taxiforsure.pageObjects.SelectLocation.doSelectCity(SelectLocation.java:163)
-	at com.taxiforsure.regressionTest.TaxiforSureBookingsTest.pointToPointTest(TaxiforSureBookingsTest.java:68)
-... Removed 38 stack frames
+	at com.sun.proxy.$Proxy6.clear(Unknown Source)
+	at com.taxiforsure.actions.DoOperation.type(DoOperation.java:102)
+	at com.taxiforsure.pageObjects.Login.doLogin(Login.java:81)
+	at com.taxiforsure.regressionTest.LoginTest.loginTest(LoginTest.java:36)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 41 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 55 more
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -165,7 +186,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 &lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
   &lt;test name=&quot;TaxiforsureTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.taxiforsure.regressionTest.TaxiforSureBookingsTest&quot;/&gt;
+      &lt;class name=&quot;com.taxiforsure.regressionTest.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TaxiforsureTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -207,14 +228,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'pointToPointTest')
-data.setCell(0, 2, 'com.taxiforsure.regressionTest.TaxiforSureBookingsTest')
-data.setCell(0, 3, 951);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.taxiforsure.regressionTest.LoginTest')
+data.setCell(0, 3, 16681);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 951 ms</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -225,34 +246,13 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">pointToPointTest(Bangalore, Marathahalli, Majestic, 6:15 a.m., Sedan, 9999999999, sabyasachi2189@gmail.com)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href = file:///D:\Mycodes\TFSAutomation\target\surefire-reports\screenshots\19_Nov_2014__11_56_39AM.png target='_blank'> <p align="left", style= "color: red; font: italic bold 12px/30px Georgia,serif;" >Click here for screen shot </p> </a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.taxiforsure.regressionTest.TaxiforSureBookingsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">outstationTest</span>
-                <br/>
-                <span class="ignored-method-name">loginTest</span>
-                <br/>
-                <span class="ignored-method-name">packageTest</span>
-                <br/>
-                <span class="ignored-method-name">fromAirportTest</span>
-                <br/>
-                <span class="ignored-method-name">goToAirportTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -261,7 +261,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.taxiforsure.regressionTest.TaxiforSureBookingsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.taxiforsure.regressionTest.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
@@ -269,17 +269,15 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">pointToPointTest(Bangalore, Marathahalli, Majestic, 6:15 a.m., Sedan, 9999999999, sabyasachi2189@gmail.com)</span>
-                <span class="method-start">53145 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">17982 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">onTestFailure([TestResult name=pointToPointTest status=FAILURE method=TaxiforSureBookingsTest.pointToPointTest(jav...)</span>
-                <span class="method-start">54111 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">onTestFailure([TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:0, instance:com.taxiforsu...)</span>
+                <span class="method-start">34678 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">54939 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

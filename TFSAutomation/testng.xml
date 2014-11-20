@@ -3,8 +3,8 @@
 <suite name="Suite" parallel="none">
   <test name="TaxiforsureTest">
     <classes>
-<!--       <class name="com.taxiforsure.regressionTest.LoginTest"/> -->
-       <class name="com.taxiforsure.regressionTest.TaxiforSureBookingsTest"/>
+      <class name="com.taxiforsure.regressionTest.LoginTest"/>
+<!--        <class name="com.taxiforsure.regressionTest.TaxiforSureBookingsTest"/> -->
        <!-- <methods>
            <include name="goToAirportTest" />
        </methods> -->

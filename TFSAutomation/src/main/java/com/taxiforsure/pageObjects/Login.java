@@ -25,7 +25,7 @@ WebDriver driver;
 	}
 	
 
-	@FindBy(xpath = "//*[@id='id_login']/em")
+	@FindBy(id = "id_login")
 	public WebElement loginLnk;
 
 	

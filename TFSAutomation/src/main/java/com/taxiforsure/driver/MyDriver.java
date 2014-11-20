@@ -121,7 +121,7 @@ public class MyDriver {
 		ESS_LOGS.debug("Navigating to "+url);
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		}catch(Exception e){
 			throw new RuntimeException("Cannot start browser because:  "+e.getMessage());
 		}

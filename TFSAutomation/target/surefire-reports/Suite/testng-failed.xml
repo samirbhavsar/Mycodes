@@ -3,14 +3,13 @@
 <suite verbose="0" name="Failed suite [Suite]" parallel="none">
   <test name="TaxiforsureTest(failed)" parallel="none">
     <classes>
-      <class name="com.taxiforsure.regressionTest.TaxiforSureBookingsTest">
+      <class name="com.taxiforsure.regressionTest.LoginTest">
         <methods>
-          <include name="onTestFailure"/>
-          <include name="tearDown"/>
-          <include name="pointToPointTest" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="onTestFailure"/>
         </methods>
-      </class> <!-- com.taxiforsure.regressionTest.TaxiforSureBookingsTest -->
+      </class> <!-- com.taxiforsure.regressionTest.LoginTest -->
     </classes>
   </test> <!-- TaxiforsureTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
