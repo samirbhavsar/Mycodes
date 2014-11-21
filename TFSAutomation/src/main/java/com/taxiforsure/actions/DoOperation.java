@@ -122,7 +122,12 @@ public class DoOperation
 		String result = new BigInteger(Long.SIZE * length, random).toString(32);
 		return result.substring(0, length);
 	}
+	
+	public static String getTestEmail(){
+		return "test@mail.com";
+	}
 
+	
 	/**
 	 * Used to click on an element.
 	 * 
