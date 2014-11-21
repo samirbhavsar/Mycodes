@@ -133,6 +133,7 @@ public class DoOperation
 	 * 
 	 * @param element
 	 */
+	
 	public static void click(WebDriver driver, WebElement element) {
 		// PropertyConfigurator.configure("log4j.properties");
 		// DOMConfigurator.configure("devpinoyLogger.xml");

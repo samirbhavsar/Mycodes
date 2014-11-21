@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -51,6 +52,9 @@ WebDriver driver;
 	
 	@FindBy(xpath="//ul[@class='cityUL']/li/a")
 	public List<WebElement> cityList;
+	
+	/*@FindAll(value="//ul[@class='cityUL']/li/a)
+	public WebElement city_lst;*/
 	
 	@FindBy(xpath="//div[@class='welcomeMsg topDiv']/descendant::b")
 	public WebElement username;
