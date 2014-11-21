@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="2" time="37.176" errors="0" skipped="1" tests="3" name="TestSuite">
+<testsuite failures="1" time="51.649" errors="0" skipped="1" tests="3" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_71\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="D:\Mycodes\TFSAutomation"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_71\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\Users\SABYAS~1.MIS\AppData\Local\Temp\surefirebooter6227087286793381938.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SABYAS~1.MIS\AppData\Local\Temp\surefirebooter7418953749619524282.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\SABYAS~1.MIS\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="32"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_71\jre"/>
-    <property name="sun.java.command" value="C:\Users\SABYAS~1.MIS\AppData\Local\Temp\surefirebooter6227087286793381938.jar C:\Users\SABYAS~1.MIS\AppData\Local\Temp\surefire8716315642853781329tmp C:\Users\SABYAS~1.MIS\AppData\Local\Temp\surefire8815658791339722523tmp"/>
+    <property name="sun.java.command" value="C:\Users\SABYAS~1.MIS\AppData\Local\Temp\surefirebooter7418953749619524282.jar C:\Users\SABYAS~1.MIS\AppData\Local\Temp\surefire7587488192985361308tmp C:\Users\SABYAS~1.MIS\AppData\Local\Temp\surefire2905829813787234080tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -53,7 +53,6 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="org.uncommons.reportng.escape-output" value="false"/>
     <property name="localRepository" value="C:\Users\sabyasachi.mishra\.m2\repository"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
@@ -62,7 +61,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="16.681" classname="com.taxiforsure.regressionTest.LoginTest" name="loginTest">
+  <testcase time="12.566" classname="com.taxiforsure.regressionTest.LoginTest" name="loginTest"/>
+  <testcase time="30.976" classname="com.taxiforsure.regressionTest.LoginTest" name="onTestFailure">
     <failure message="Error communicating with the remote browser. It may have died.
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;SABYA-TI8158&apos;, ip: &apos;10.129.177.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
@@ -71,17 +71,20 @@ Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6
 System info: host: &apos;SABYA-TI8158&apos;, ip: &apos;10.129.177.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
-	at com.sun.proxy.$Proxy6.clear(Unknown Source)
-	at com.taxiforsure.actions.DoOperation.type(DoOperation.java:102)
-	at com.taxiforsure.pageObjects.Login.doLogin(Login.java:81)
-	at com.taxiforsure.regressionTest.LoginTest.loginTest(LoginTest.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy6.getCoordinates(Unknown Source)
+	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:40)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:367)
+	at com.taxiforsure.actions.DoOperation.mouseOverAction(DoOperation.java:341)
+	at com.taxiforsure.pageObjects.Login.doLogout(Login.java:97)
+	at com.taxiforsure.regressionTest.LoginTest.onTestFailure(LoginTest.java:56)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
@@ -98,7 +101,7 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7
 	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
 	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 41 more
+	... 46 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
@@ -110,54 +113,10 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.Socket.connect(Socket.java:579)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
 	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	... 55 more
+	... 60 more
 </failure>
   </testcase>
-  <testcase time="17.726" classname="com.taxiforsure.regressionTest.LoginTest" name="onTestFailure">
-    <failure message="Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;SABYA-TI8158&apos;, ip: &apos;10.129.177.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Driver info: driver.version: MyDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;SABYA-TI8158&apos;, ip: &apos;10.129.177.45&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Driver info: driver.version: MyDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.firefox.FirefoxDriver.getScreenshotAs(FirefoxDriver.java:323)
-	at com.taxiforsure.driver.MyDriver.takeScreenShot(MyDriver.java:141)
-	at com.taxiforsure.regressionTest.LoginTest.onTestFailure(LoginTest.java:53)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 36 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	... 50 more
-</failure>
-  </testcase>
-  <testcase time="17.726" classname="com.taxiforsure.regressionTest.LoginTest" name="tearDown">
+  <testcase time="30.991" classname="com.taxiforsure.regressionTest.LoginTest" name="tearDown">
     <skipped/>
   </testcase>
 </testsuite>

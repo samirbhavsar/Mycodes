@@ -2,6 +2,7 @@ package com.taxiforsure.pageObjects;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -75,7 +76,9 @@ WebDriver driver;
 		DoOperation.sendKeystrokes(txt_city_Input, Keys.ARROW_DOWN);
 		DoOperation.sendKeystrokes(txt_city_Input, Keys.RETURN);
 		
-		DoOperation.click(driver, loginLnk);
+		//DoOperation.click(driver, loginLnk);
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", loginLnk);
 		Thread.sleep(3000);
 	//	Assert.assertTrue(new Login(driver).usernameTextBox.isDisplayed(),"Not present");
 		DoOperation.type(driver, usernameTextBox, userName);
