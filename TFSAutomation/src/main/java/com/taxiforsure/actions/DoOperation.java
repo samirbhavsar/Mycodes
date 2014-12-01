@@ -9,6 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -185,6 +186,18 @@ public class DoOperation
 		System.out.println(DoOperation.getDate(new Date(), 10).split("/")[2]);
 	}*/
 	
+	public static void closeWindows(WebDriver driver) {
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> allWindows = driver.getWindowHandles();
+		if (allWindows.isEmpty()) {
+			for (String windows : allWindows) {
+				if (!windows.equals(parentWindow)) {
+					driver.close();
+				}
+			}
+		}
+	}
 	
 	public static void typeDate(WebDriver driver,String locator,String date){
 		((JavascriptExecutor) driver).executeScript ("document.getElementById ('"+locator+"').removeAttribute('readonly',0);");
