@@ -2,6 +2,7 @@ package com.taxiforsure.pageObjects;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,6 +15,7 @@ import com.taxiforsure.assertions.Assertion;
 public class Login {
 	
 WebDriver driver;
+Logger log = Logger.getLogger("Login");
 	
 	public Login(WebDriver driver)
 	{
@@ -83,4 +85,15 @@ WebDriver driver;
 		
 	}
 
+	public void setUsername(String username){
+		try{
+			usernameTextBox.clear();
+			usernameTextBox.sendKeys(username);
+			log.info("UserName field exists");
+		}catch(Throwable t){
+			log.error("username field doesnot exist");
+			Assert.fail("Username doesnot exists or not visible");
+			
+		}
+	}
 }
