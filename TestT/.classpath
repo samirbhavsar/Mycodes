@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/cssparser-0.9.14.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/gson-2.3.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/htmlunit-2.15.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/htmlunit-core-js-2.15.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/httpclient-4.3.4.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/httpmime-4.3.4.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/mysql-connector-java-5.1.15.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/nekohtml-1.9.21.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/operadriver-1.5.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/phantomjsdriver-1.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/poi-3.11-beta2-20140822.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/poi-examples-3.11-beta2-20140822.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/poi-excelant-3.11-beta2-20140822.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/poi-ooxml-3.11-beta2-20140822.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/poi-ooxml-schemas-3.11-beta2-20140822.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/poi-scratchpad-3.11-beta2-20140822.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/selenium-java-2.44.0.jar" sourcepath="/TaxiForSureTest/jarfiles/selenium-java-2.44.0-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/selenium-java-2.44.0-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/testng-6.8.5.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="D:/Projects/TaxiForSureTest/jarfiles/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sabyasachi.mishra/Downloads/json-simple-1.1.jar" sourcepath="C:/Users/sabyasachi.mishra/Downloads/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sabyasachi.mishra/Desktop/mysql-connector-java-3.1.13-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sabyasachi.mishra/Downloads/aspriseOCR.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_71/jre/lib/jfxrt.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
